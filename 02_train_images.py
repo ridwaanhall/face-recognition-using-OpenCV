@@ -3,6 +3,10 @@ import os
 import numpy as np
 from PIL import Image
 
+'''
+train 30 images for each user and save the model to data/ridwaanhall_training.xml
+'''
+
 class FaceTrainer:
     def __init__(self, cascade_file="haarcascade_frontalface_default.xml"):
         self.recognizer = cv2.face.LBPHFaceRecognizer_create()
@@ -22,8 +26,8 @@ class FaceTrainer:
                 ids.append(identity)
         return face_samples, ids
 
-    def train_and_save(self, dataset_path, output_path):
-        faces, ids = self.get_images_with_labels(dataset_path)
+    def train_and_save(self, data_path, output_path):
+        faces, ids = self.get_images_with_labels(data_path)
         self.recognizer.train(faces, np.array(ids))
         self.recognizer.save(output_path)
 
