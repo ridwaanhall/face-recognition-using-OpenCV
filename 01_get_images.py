@@ -1,5 +1,9 @@
 import cv2
 
+'''
+get 30 images for each user from camera.
+'''
+
 class FaceRecognition:
     def __init__(self, camera=0, cascade_file='haarcascade_frontalface_default.xml'):
         self.camera = camera
