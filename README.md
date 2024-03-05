@@ -33,7 +33,7 @@ pip install opencv-python opencv-contrib-python pillow numpy
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/ridwaanhall/face-recognition-with-opencv.git
+git clone https://github.com/ridwaanhall/face-recognition-with-OpenCV.git
 ```
 
 ### 2. Navigate to the directory
