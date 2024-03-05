@@ -1,5 +1,9 @@
 import cv2
 
+'''
+run this code to see the results.
+'''
+
 class FaceRecognizer:
     def __init__(self, camera=0, face_cascade_file='haarcascade_frontalface_default.xml', training_file='data/ridwaanhall_training.xml'):
         self.camera = camera
