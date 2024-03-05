@@ -1,5 +1,7 @@
 ﻿# Face Recognition with OpenCV
 
+## follow my instagram [@ridwaanhall](https://www.instagram.com/ridwaanhall/)
+
 This project uses OpenCV to detect and recognize faces in an image with Haar Cascade Classifiers and LBPH Face Recognizer.
 
 ## Installation
