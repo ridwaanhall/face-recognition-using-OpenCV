@@ -1,6 +1,6 @@
-﻿# Face Recognition with OpenCV and Python
+﻿# Face Recognition with OpenCV
 
-This project uses OpenCV and Python to detect and recognize faces in an image with Haar Cascade Classifiers and LBPH Face Recognizer.
+This project uses OpenCV to detect and recognize faces in an image with Haar Cascade Classifiers and LBPH Face Recognizer.
 
 ## Installation
 
