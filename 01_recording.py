@@ -6,7 +6,7 @@ class FaceRecognition:
         self.video = cv2.VideoCapture(camera, cv2.CAP_DSHOW)
         self.face_cascade = cv2.CascadeClassifier(cascade_file)
 
-    def capture_faces(self, user_id, max_images=30):
+    def capture_faces(self, username, user_id, max_images=30):
         count = 0
         while True:
             count += 1
@@ -15,7 +15,7 @@ class FaceRecognition:
             faces = self.face_cascade.detectMultiScale(gray_frame, 1.3, 5)
             print(faces)
             for (x, y, w, h) in faces:
-                cv2.imwrite(f'data/user.{user_id}.{count}.jpg', gray_frame[y:y+h, x:x+w])
+                cv2.imwrite(f'data/{username}.{user_id}.{count}.jpg', gray_frame[y:y+h, x:x+w])
                 cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
             cv2.imshow("Face Recognition Window", frame)
             if count >= max_images:
@@ -28,5 +28,6 @@ class FaceRecognition:
 if __name__ == "__main__":
     camera_index = 0
     user_id = input('Id: ')
+    username = input('Username: ')
     recognizer = FaceRecognition(camera_index)
-    recognizer.capture_faces(user_id)
+    recognizer.capture_faces(username, user_id)
