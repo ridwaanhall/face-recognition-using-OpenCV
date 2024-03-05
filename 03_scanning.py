@@ -21,7 +21,7 @@ class FaceRecognizer:
                 if id == 1:
                     id = 'ridwaanhall'
                 elif id == 2:
-                    id = 'orang ke dua'
+                    id = 'uden'
                 else:
                     id = 'Lu gak dianggep'
                 cv2.putText(frame, str(id), (x+40, y-10), cv2.FONT_HERSHEY_DUPLEX, 1, (0, 255, 0))
