@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image
 
 '''
-train 30 images for each user and save the model to data/ridwaanhall_training.xml
+train 20 images for each user and save the model to data/ridwaanhall_training.xml
 '''
 
 class FaceTrainer:

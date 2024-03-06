@@ -1,7 +1,7 @@
 import cv2
 
 '''
-get 30 images for each user from camera.
+get 20 images for each user from camera.
 '''
 
 class FaceRecognition:
@@ -10,7 +10,7 @@ class FaceRecognition:
         self.video = cv2.VideoCapture(camera, cv2.CAP_DSHOW)
         self.face_cascade = cv2.CascadeClassifier(cascade_file)
 
-    def capture_faces(self, username, user_id, max_images=30):
+    def capture_faces(self, username, user_id, max_images=20): # you can change max_images
         count = 0
         while True:
             count += 1

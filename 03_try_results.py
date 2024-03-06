@@ -24,8 +24,6 @@ class FaceRecognizer:
                 id, conf = self.recognizer.predict(gray_frame[y:y+h, x:x+w])
                 if id == 1:
                     id = 'ridwaanhall'
-                elif id == 2:
-                    id = 'uden'
                 else:
                     id = 'Lu gak dianggep'
                 cv2.putText(frame, str(id), (x+40, y-10), cv2.FONT_HERSHEY_DUPLEX, 1, (0, 255, 0))
