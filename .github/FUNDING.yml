@@ -1,3 +1,12 @@
-github: [ridwaanhall]
-patreon: ridwaanhall
-custom: ["https://www.paypal.me/ridwaanhall", ridwaanhall.com]
+github: [user1, user2, user3]
+patreon: example_creator
+open_collective: example_collective
+ko_fi: example_kofi
+tidelift: npm/react
+community_bridge: example_project
+liberapay: example_liberapay
+issuehunt: example_issuehunt
+otechie: example_otechie
+lfx_crowdfunding: example_lfx
+polar: example_polar
+custom: ['example_custom1', 'example_custom2']
