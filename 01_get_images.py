@@ -1,6 +1,9 @@
 import cv2
 
 '''
+5210411257
+Ridwan Halim
+
 get 20 images for each user from camera.
 '''
 
